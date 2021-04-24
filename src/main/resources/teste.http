@@ -37,17 +37,18 @@ GET http://localhost:8080/colaborador/ HTTP/1.1
 
 ###
 //alterar colaborador
-POST http://localhost:8080/colaborador/alterar/3 HTTP/1.1
+POST http://localhost:8080/colaborador/alterar/238472834 HTTP/1.1
 content-type: application/json
 
 {
-    "nome": "Carlos Augusto",
-    "cpf": "8827737382"
+    "nome": "Jose Erik",
+    "cpf": "238472834",
+    "cafeDaManha": "Pão na chapa"
 }
 
 ###
 //remover colaborador
-GET http://localhost:8080/colaborador/2 HTTP/1.1
+GET http://localhost:8080/colaborador/888822222 HTTP/1.1
 
 
 ###
@@ -56,6 +57,7 @@ POST http://localhost:8080/colaborador/incluir HTTP/1.1
 content-type: application/json
 
 {
-    "nome": "Paulo Gustavo",
-    "cpf": "888822222"
+    "nome": "Paulo Henrique",
+    "cpf": "23333332333",
+    "cafeDaManha": "Pao com Manteigas"
 }
