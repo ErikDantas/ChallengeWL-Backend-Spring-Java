@@ -1,0 +1,61 @@
+//Get all Cafe da Manha
+GET http://localhost:8080/cafedamanha/ HTTP/1.1
+
+
+
+###
+//alterar Cafe da Manha
+POST http://localhost:8080/cafedamanha/alterar/6 HTTP/1.1
+content-type: application/json
+
+{
+    "descricao": "Salsichao"
+}
+
+###
+//remover cafe da manha
+GET http://localhost:8080/cafedamanha/1 HTTP/1.1
+
+
+###
+//incluir cafe da manha
+POST http://localhost:8080/cafedamanha/incluir HTTP/1.1
+content-type: application/json
+
+{
+    "descricao": "Queijo Minas Assado"
+}
+
+
+// ----------------------------
+
+###
+//Get all colaborador
+GET http://localhost:8080/colaborador/ HTTP/1.1
+
+
+
+###
+//alterar colaborador
+POST http://localhost:8080/colaborador/alterar/3 HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Carlos Augusto",
+    "cpf": "8827737382"
+}
+
+###
+//remover colaborador
+GET http://localhost:8080/colaborador/2 HTTP/1.1
+
+
+###
+//incluir colaborador
+POST http://localhost:8080/colaborador/incluir HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Paulo Gustavo",
+    "cpf": "888822222"
+}
