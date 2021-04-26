@@ -9,7 +9,6 @@ import javax.persistence.Query;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.challengwl.challengewl.Model.CafeDaManha;
 import br.challengwl.challengewl.Model.Colaborador;
 
 @Service
@@ -28,12 +27,5 @@ public class NativeScriptQueries {
         Query q = entityManager.createNativeQuery(sql, Colaborador.class);
         List<Colaborador> colaboradores = q.getResultList();
         return colaboradores;
-    }
-
-    @SuppressWarnings("unchecked")
-    public List<CafeDaManha> getAllOpcoesDeCafe(String sql) {
-        Query q = entityManager.createNativeQuery(sql, CafeDaManha.class);
-        List<CafeDaManha> opcoes =  q.getResultList();
-        return opcoes;
     }
 }
